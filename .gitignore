@@ -22,7 +22,6 @@ config.json
 media
 !/media/init.txt
 ignored
-/django
 logs/*.txt
 sitemaps
 temp.json

@@ -189,7 +189,7 @@ class HttpUtils:
     def get_location_from_ip(cls, server_url, ip, query_string):
         req_url = server_url + ip + query_string
         print(req_url)
-        res = cls.http_get_json(req_url)
+        res = cls.get_json(req_url)
         return res
 
     @classmethod
