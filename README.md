@@ -1,27 +1,23 @@
-# sam_pytools
+# PY Tools
 
 `sam_pytools` is a collection of Python utilities that provide commonly used functions for handling dates, HTTP requests, JSON manipulation, logging, and more.
 These tools help streamline various tasks in Python projects.
 
-### Project Structure
-root/
-├── README.md
-├── setup.py
-└── sam_pytools/
-    └── __init__.py 
 
 ### Installation
 
 To install `sam_pytools`, use pip:
 
 #### Available Modules
-      GlobalValues: Manages global values like home and log directories.
-      CoreUtils: Contains utility methods for general operations like downloading images, decoding bytes, generating unique IDs, etc.
-      DateUtils: Provides date manipulation functions, including time difference calculations and interval additions.
-      HttpUtils: Offers HTTP helper methods for GET and POST requests.
-      JsonUtils: Contains JSON helper functions, like converting dictionaries to objects.
-      LogUtils: Manages logging and error handling.
-      AsyncUtils: Enables asynchronous task execution with asyncio or ThreadPoolExecutor.
+    GlobalValues: Manages global values like home and log directories.
+    CoreUtils: Contains utility methods for general operations 
+    like downloading images, decoding bytes, generating unique IDs, etc.
+    DateUtils: Provides date manipulation functions, 
+    including time difference calculations and interval additions.
+    HttpUtils: Offers HTTP helper methods for GET and POST requests.
+    JsonUtils: Contains JSON helper functions, like converting dictionaries to objects.
+    LogUtils: Manages logging and error handling.
+    AsyncUtils: Enables asynchronous execution of given tasks with asyncio or ThreadPoolExecutor.
 
 
 `pip install sam_pytools`
