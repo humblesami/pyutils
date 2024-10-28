@@ -1,0 +1,29 @@
+# This file is protected via CODEOWNERS
+
+[build-system]
+requires = ["hatchling>=1.6.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sam_pytools"
+description = "Sami Test Pip"
+readme = "README.md"
+keywords = ["urllib", "httplib", "http"]
+authors = [{name = "Sami Akram", email="samiakram@live.com"}, ]
+maintainers = [{name = "Sami Akram", email="samiakram@live.com"}, ]
+classifiers = [ "Operating System :: OS Independent", "Programming Language :: Python :: 3"]
+requires-python = ">=3"
+dynamic = ["version"]
+
+[project.urls]
+"Changelog" = "https://github.com/humblesami/pyutils/CHANGES.rst"
+"Code" = "https://github.com/humblesami/pyutils"
+"Issue tracker" = "https://github.com/humblesami/pyutils/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [ "/requirements.txt",  "/CHANGES.rst",  "/README.md",  "/LICENSE.txt"]
+markers = ["limit_memory"]
+log_level = "DEBUG"
+add_imports = "from __future__ import annotations"
+skip = ["setup.py"]
+
