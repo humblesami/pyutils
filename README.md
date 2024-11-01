@@ -6,7 +6,7 @@ These tools help streamline various tasks in Python projects.
 
 ### Installation
 
-To install `sam_pytools`, use pip:
+`pip install samPytools`
 
 #### Available Modules
     GlobalValues: Manages global values like home and log directories.
@@ -29,7 +29,7 @@ For easier and clean error tracing
 `LogUtils.getErrorMessage()` is the one that can make life easier
 
 Another is AsyncUtils
-
+```
     from sam_tools import AsyncUtils
 
       def task1():
@@ -49,3 +49,15 @@ Another is AsyncUtils
       print(f'Tasks reached at {DateUtils.now_str()}')
       AsyncUtils.execute_tasks_with_no_wait(task_list)
       print(f'Tasks started at {DateUtils.now_str()}')
+```
+
+
+#### General about pip
+
+If you want to reset your testing virtual environment
+
+`pip freeze | xargs pip uninstall -y`
+
+then to install your requirements
+
+`pip install -r requirements.txt`

@@ -72,7 +72,7 @@ https://pypi.org/manage/account/#api-tokens
 
 `twine upload --repository testpypi dist/*`
 
-`twine upload dist/* --config-file .pypirc_test`
+`twine upload dist/*`
 
 
 *After upload Install the uploaded package*

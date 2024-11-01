@@ -9,7 +9,6 @@ import requests
 import threading
 import traceback
 from os import mkdir
-import httpagentparser
 from pathlib import Path
 import concurrent.futures
 from os.path import exists
@@ -191,16 +190,6 @@ class HttpUtils:
         print(req_url)
         res = cls.get_json(req_url)
         return res
-
-    @classmethod
-    def get_browser(cls, agent):
-        browser = httpagentparser.detect(agent)
-        if not browser:
-            browser = agent.split('/')[0]
-        else:
-            browser = browser['browser']['name']
-
-        return browser
 
     @classmethod
     def get_client_ip(cls, req_meta):

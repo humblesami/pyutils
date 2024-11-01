@@ -10,7 +10,7 @@ path = "sam_pytools/__init__.py"
 [project]
 version = "0.1.1"
 name = "sam_pytools"
-dependencies = ["requests>=2.32.2", "pytz>=2024.2", "httpagentparser>=1.9.5", "python-dateutil>=2.9.0"]
+dependencies = ["python-dateutil>=2.9.0", "pytz>=2024.2", "requests>=2.32.2"]
 description = '''sam_pytools is a collection of Python utilities that provide commonly used functions, so we do not need to write'''
 readme = "README.md"
 keywords = ["urllib", "httplib", "http"]
