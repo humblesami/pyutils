@@ -6,7 +6,7 @@ These tools help streamline various tasks in Python projects.
 
 ### Installation
 
-`pip install samPytools`
+`pip install sam_pytools`
 
 #### Available Modules
     GlobalValues: Manages global values like home and log directories.
